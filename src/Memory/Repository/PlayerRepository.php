@@ -46,10 +46,10 @@ class PlayerRepository implements PlayerRepositoryInterface
         return null;
     }
 
-    public function update(Player $player)
-    {
+    // public function save(Player $player)
+    // {
 
-    }
+    // }
 
     public function getTopPlayers(): array
     {

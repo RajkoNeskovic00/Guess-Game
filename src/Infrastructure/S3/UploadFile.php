@@ -39,5 +39,6 @@ class UploadFile implements FileUploaderInterface
     {
         return "https://localstack.mikroe.com/".$this->bucketName."/".$this->s3Object;
         //putanja za upload  slike
+        //bucket name je iz Game mikroe 
     }
 }

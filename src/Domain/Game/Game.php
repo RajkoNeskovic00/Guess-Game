@@ -4,7 +4,7 @@ namespace Guess\Domain\Game;
 
 use DateTimeImmutable;
 use DateTimeInterface;
-use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection; //umesto ArrayCollection
 use Exception;
 use Guess\Domain\League\League;
 use Guess\Domain\Player\Guess;
@@ -17,7 +17,7 @@ class Game
     private Team $homeTeam;
     private Team $awayTeam;
     private DateTimeInterface $gameTime;
-    private ArrayCollection $guesses;
+    private Collection $guesses; //umesto ArrayCollection
     private League $league;
 
     public function __construct()
@@ -85,12 +85,12 @@ class Game
         return $this;
     }
 
-    public function getGuesses(): ArrayCollection
+    public function getGuesses(): Collection
     {
         return $this->guesses;
     }
 
-    public function setGuesses(ArrayCollection $guesses): self
+    public function setGuesses(Collection $guesses): self
     {
         $this->guesses = $guesses;
 

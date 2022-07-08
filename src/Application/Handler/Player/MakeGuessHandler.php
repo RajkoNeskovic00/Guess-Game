@@ -43,7 +43,7 @@ class MakeGuessHandler
         /** @var Player $player */
         $player->makeGuesses($game, $homeTeamGuess, $awayTeamGuess);
 
-        $this->playerRepository->update(
+        $this->playerRepository->save(
             $player
         );
 

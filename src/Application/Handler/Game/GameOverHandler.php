@@ -43,7 +43,7 @@ class GameOverHandler
         }
 
         /** @var Game $game */
-        $game = $this->gameRepository->findOneBy(
+        $game = $this -> gameRepository -> findOneBy(
             [
                 'homeTeam' => $homeTeam,
                 'awayTeam' => $awayTeam,
