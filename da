@@ -1,0 +1,162 @@
+<?php
+
+namespace Guess\Domain\Game;
+
+use DateTimeInterface;
+use Guess\Domain\Team\Team;
+use Guess\Domain\League\League;
+use Doctrine\Common\Collections\ArrayCollection;
+
+class Game
+{
+    private $id;
+    private string $score;
+    private Team $homeTeam;
+    private Team $awayTeam;
+    private DateTimeInterface $gameTime;
+    private ArrayCollection $guesses;
+    private League $league;
+
+    
+
+
+    /**
+     * Get the value of id
+     */ 
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set the value of id
+     *
+     * @return  self
+     */ 
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of score
+     */ 
+    public function getScore()
+    {
+        return $this->score;
+    }
+
+    /**
+     * Set the value of score
+     *
+     * @return  self
+     */ 
+    public function setScore($score)
+    {
+        $this->score = $score;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of homeTeam
+     */ 
+    public function getHomeTeam()
+    {
+        return $this->homeTeam;
+    }
+
+    /**
+     * Set the value of homeTeam
+     *
+     * @return  self
+     */ 
+    public function setHomeTeam($homeTeam)
+    {
+        $this->homeTeam = $homeTeam;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of awayTeam
+     */ 
+    public function getAwayTeam()
+    {
+        return $this->awayTeam;
+    }
+
+    /**
+     * Set the value of awayTeam
+     *
+     * @return  self
+     */ 
+    public function setAwayTeam($awayTeam)
+    {
+        $this->awayTeam = $awayTeam;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of gameTime
+     */ 
+    public function getGameTime()
+    {
+        return $this->gameTime;
+    }
+
+    /**
+     * Set the value of gameTime
+     *
+     * @return  self
+     */ 
+    public function setGameTime($gameTime)
+    {
+        $this->gameTime = $gameTime;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of guesses
+     */ 
+    public function getGuesses()
+    {
+        return $this->guesses;
+    }
+
+    /**
+     * Set the value of guesses
+     *
+     * @return  self
+     */ 
+    public function setGuesses($guesses)
+    {
+        $this->guesses = $guesses;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of league
+     */ 
+    public function getLeague()
+    {
+        return $this->league;
+    }
+
+    /**
+     * Set the value of league
+     *
+     * @return  self
+     */ 
+    public function setLeague($league)
+    {
+        $this->league = $league;
+
+        return $this;
+    }
+}
