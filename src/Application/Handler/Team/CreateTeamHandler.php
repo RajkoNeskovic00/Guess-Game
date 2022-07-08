@@ -36,7 +36,7 @@ class CreateTeamHandler
         }
 
         try {
-            $this->logoUploader->upload('guess-team', $team['name'], $team['logo']);
+            $this->logoUploader->upload('guess-game', $team['name'], $team['logo']);
         } catch (Exception $exception) {
             throw new Exception("Cant upload the logo: ".$exception);
         }

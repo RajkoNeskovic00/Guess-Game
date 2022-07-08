@@ -38,6 +38,6 @@ class UploadFile implements FileUploaderInterface
     public function getImageUrl(): string
     {
         return "https://localstack.mikroe.com/".$this->bucketName."/".$this->s3Object;
-        //putanja za upload na
+        //putanja za upload  slike
     }
 }

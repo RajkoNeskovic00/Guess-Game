@@ -35,7 +35,7 @@ class CreateLeagueHandler
         }
 
         try {
-            $this->logoUploader->upload('guess-league', $league['name'], $league['logo']);
+            $this->logoUploader->upload('guess-game', $league['name'], $league['logo']);
         } catch (Exception $exception) {
             throw new Exception("Cant upload the logo: ".$exception);
         }
